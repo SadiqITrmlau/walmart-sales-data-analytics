@@ -1,0 +1,12 @@
+{
+  "name": "walmart-bi-dashboard",
+  "version": "1.0.0",
+  "description": "Walmart Market End-to-End Business Intelligence Report (Power BI & Web Analytics) - Created by Sadiq Khan",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 8000 .",
+    "dev": "python server.py"
+  },
+  "author": "Sadiq Khan",
+  "license": "MIT"
+}

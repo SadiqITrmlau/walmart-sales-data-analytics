@@ -1,0 +1,137 @@
+// ====================================================================
+// WALMART MARKET POWER BI - COMPLETE DAX MEASURES CATALOG
+// Author: Sadiq Khan
+// Project: Canada, Mexico, USA Market BI Reporting
+// ====================================================================
+
+// --------------------------------------------------------------------
+// 1. CORE VOLUME & FINANCIAL MEASURES
+// --------------------------------------------------------------------
+
+Total Transactions = 
+COUNTROWS('Transaction_Data')
+
+Total Revenue = 
+SUMX(
+    'Transaction_Data',
+    'Transaction_Data'[quantity] * RELATED('Products'[discount_price])
+)
+
+Total Cost = 
+SUMX(
+    'Transaction_Data',
+    'Transaction_Data'[quantity] * RELATED('Products'[unit_cost])
+)
+
+Total Profit = 
+[Total Revenue] - [Total Cost]
+
+Profit Margin = 
+DIVIDE([Total Profit], [Total Revenue], 0)
+
+Total Returns = 
+SUM('Return_Data'[quantity])
+
+Return Rate = 
+DIVIDE([Total Returns], [Total Transactions], 0)
+
+
+// --------------------------------------------------------------------
+// 2. TIME INTELLIGENCE & BENCHMARKING (CURRENT VS LAST MONTH)
+// --------------------------------------------------------------------
+
+Current Month Transactions = 
+CALCULATE(
+    [Total Transactions],
+    FILTER(
+        ALL('Calendar'),
+        'Calendar'[Month] = MAX('Calendar'[Month]) &&
+        'Calendar'[Year] = MAX('Calendar'[Year])
+    )
+)
+
+Last Month Transactions = 
+CALCULATE(
+    [Total Transactions],
+    DATEADD('Calendar'[Date], -1, MONTH)
+)
+
+MoM Transaction Growth % = 
+DIVIDE(
+    [Current Month Transactions] - [Last Month Transactions],
+    [Last Month Transactions],
+    0
+)
+
+Current Month Profit = 
+CALCULATE(
+    [Total Profit],
+    FILTER(
+        ALL('Calendar'),
+        'Calendar'[Month] = MAX('Calendar'[Month]) &&
+        'Calendar'[Year] = MAX('Calendar'[Year])
+    )
+)
+
+Last Month Profit = 
+CALCULATE(
+    [Total Profit],
+    DATEADD('Calendar'[Date], -1, MONTH)
+)
+
+MoM Profit Growth % = 
+DIVIDE(
+    [Current Month Profit] - [Last Month Profit],
+    [Last Month Profit],
+    0
+)
+
+Current Month Returns = 
+CALCULATE(
+    [Total Returns],
+    FILTER(
+        ALL('Calendar'),
+        'Calendar'[Month] = MAX('Calendar'[Month]) &&
+        'Calendar'[Year] = MAX('Calendar'[Year])
+    )
+)
+
+Last Month Returns = 
+CALCULATE(
+    [Total Returns],
+    DATEADD('Calendar'[Date], -1, MONTH)
+)
+
+MoM Returns Growth % = 
+DIVIDE(
+    [Current Month Returns] - [Last Month Returns],
+    [Last Month Returns],
+    0
+)
+
+
+// --------------------------------------------------------------------
+// 3. TARGET GAUGE & CONDITIONAL FORMATTING MEASURES
+// --------------------------------------------------------------------
+
+Revenue Target = 
+[Last Month Profit] * 1.05  // Dynamic 5% MoM target
+
+Revenue vs Target % = 
+DIVIDE([Current Month Profit], [Revenue Target], 0)
+
+Return Rate Alert Color = 
+SWITCH(
+    TRUE(),
+    [Return Rate] >= 0.0110, "#E11D48", // Rose Red (Anomaly Alert)
+    [Return Rate] >= 0.0100, "#F59E0B", // Amber Warning
+    "#10B981"                          // Emerald Green (Healthy)
+)
+
+Profit Margin Color Scale = 
+SWITCH(
+    TRUE(),
+    [Profit Margin] >= 0.60, "#059669", // Dark Green (High Margin)
+    [Profit Margin] >= 0.58, "#10B981", // Light Green
+    "#D97706"                          // Muted Amber
+)
