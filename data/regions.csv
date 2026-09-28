@@ -1,0 +1,8 @@
+region_id,sales_district,sales_region,country
+1,Pacific Northwest,West USA,USA
+2,California,West USA,USA
+3,South Central,South USA,USA
+4,Midwest Metro,Midwest USA,USA
+5,Northeast Corridor,East USA,USA
+6,Mexico Central & North,Mexico,Mexico
+7,Canada East & West,Canada,Canada

@@ -1,0 +1,26 @@
+brand_id,product_brand,category,price_tier,transactions,profit,revenue,profit_margin,return_rate,returns_count
+1,Hermanos,Produce & Grocery,Medium,5341,21753,37100,0.5864,0.0095,51
+2,Ebony,Pantry & Spices,High,5238,20354,34030,0.5981,0.0096,50
+3,Tell Tale,Beverages,Low,5132,19982,34420,0.5805,0.0099,51
+4,Tri-State,Dairy & Eggs,Medium,5000,19980,33915,0.5891,0.011,55
+5,High Top,Bakery & Snacks,High,4840,19810,32785,0.6042,0.0101,49
+6,Nationeel,Frozen Foods,Medium,4408,18617,30800,0.6044,0.0118,52
+7,Best Choice,Household Essentials,Low,4218,18355,30270,0.6064,0.0081,34
+8,Horatio,Personal Care,High,4195,17737,30360,0.5842,0.0125,52
+9,Fort West,Meat & Seafood,High,4108,15834,26478,0.598,0.0097,40
+10,Fast,Snacks & Confectionery,Low,4097,16469,26985,0.6103,0.0107,44
+11,Sunset,Produce & Fresh,Medium,3953,14018,23190,0.6045,0.0103,41
+12,Carrington,Pantry Staples,Medium,3891,14883,25005,0.5952,0.0078,30
+13,Red Wing,Beverages,High,3870,15870,26735,0.5936,0.0106,41
+14,Big Time,Snacks,Medium,3816,15560,25845,0.602,0.0105,40
+15,Cormorant,Canned Goods,Low,3744,15749,25565,0.616,0.0087,33
+16,Imagine,Organic,High,3634,15102,24595,0.614,0.0106,39
+17,Super,Household,Low,3618,13868,22888,0.6059,0.0096,35
+18,Denny,Dairy,Medium,3584,16015,27602,0.5802,0.0099,35
+19,High Quality,Meat & Poultry,High,3577,16139,28325,0.5698,0.0115,41
+20,Golden,Bakery,Low,3550,13256,22575,0.5872,0.0088,31
+21,BBB Best,Pantry,Medium,3514,12991,20912,0.6212,0.008,28
+22,PigTail,Sweets,Low,3467,11617,19145,0.6068,0.0104,36
+23,Plato,Pet Supplies,High,3352,12748,20060,0.6355,0.0106,36
+24,Landslide,Paper Goods,Low,3270,10647,18155,0.5865,0.0098,32
+25,CDR,Health & First Aid,Medium,3078,12062,20450,0.5898,0.0111,34

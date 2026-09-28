@@ -1,0 +1,14 @@
+store_id,store_name,store_city,store_state,store_country,region_id,grocery_sqft,first_opened,transactions,december_txns
+101,Walmart Portland Supercenter,Portland,OR,USA,1,45000,1992-05-12,1050,1050
+102,Walmart Seattle Metro,Seattle,WA,USA,1,42000,1994-08-15,940,820
+103,Walmart Los Angeles Central,Los Angeles,CA,USA,2,52000,1990-11-20,1250,1180
+104,Walmart San Francisco Bay,San Francisco,CA,USA,2,48000,1991-03-10,880,790
+105,Walmart Dallas Mega Hub,Dallas,TX,USA,3,55000,1989-07-04,1100,980
+106,Walmart Chicago North,Chicago,IL,USA,4,49000,1993-09-18,990,890
+107,Walmart New York Midtown,New York,NY,USA,5,50000,1995-02-28,1320,1240
+201,Walmart Mexico City Centro,Mexico City,CDMX,Mexico,6,54000,1994-10-01,1450,1390
+202,Walmart Guadalajara Hub,Guadalajara,JAL,Mexico,6,46000,1996-04-14,890,820
+203,Walmart Monterrey North,Monterrey,NL,Mexico,6,47000,1995-06-22,920,850
+301,Walmart Toronto Downtown,Toronto,ON,Canada,7,43000,1994-01-19,670,610
+302,Walmart Vancouver West,Vancouver,BC,Canada,7,41000,1996-11-05,540,490
+303,Walmart Montreal East,Montreal,QC,Canada,7,39000,1997-03-12,480,430
