@@ -5,11 +5,9 @@
 
   <!-- Dynamic Typing Animation Banner -->
 
-  <a href="https://github.com/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1200&color=0071CE&center=true&vCenter=true&width=720&lines=Walmart+Market+Enterprise+Analytics+Suite;Python+%7C+SQL+%7C+Power+BI+%7C+Excel+%7C+Tableau;Statistical+OLS+Regression+(R2+%3D+0.7302);Architected+and+Developed+by+Sadiq+Khan" alt="Typing SVG" />
-  </a>
-  <img src="./assets/typing_animation.svg" alt="Typing SVG Animation" width="720" />
-
+<a href="https://github.com/">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1200&color=0071CE&center=true&vCenter=true&width=720&lines=Walmart+Market+Enterprise+Analytics+Suite;Python+%7C+SQL+%7C+Power+BI+%7C+Excel+%7C+Tableau;Statistical+OLS+Regression+(R2+%3D+0.7302);Architected+and+Developed+by+Sadiq+Khan" alt="Typing SVG" />
+</a>
 
   <br/><br/>
 
